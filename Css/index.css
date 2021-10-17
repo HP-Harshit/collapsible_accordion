@@ -1,0 +1,55 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.accordion{
+    padding: 5px;
+    color: blue;
+    background: gray;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    width: 100%;
+}
+
+.active, .accordion:hover{
+    cursor: pointer;
+    color: white;
+    background: rgb(44, 44, 44);
+}
+
+
+/* simple Accordion  */
+
+/* .panel{
+    padding: 0 16px;
+    background: white;
+    overflow: hidden;
+    display: none;
+}
+ */
+
+/* animated accordion */
+
+.panel{
+    padding: 0 16px;
+    background: white;
+    overflow: hidden;
+    max-height: 0;
+    transition: all 0.2s ease-out;
+}
+
+
+/* icons on accrodion  */
+
+.accordion::after{
+    content: "+";
+    margin-left: 5px;
+    float: right;
+    font-size: 13px;
+}
+
+.active::after{
+    content: "-";
+}
